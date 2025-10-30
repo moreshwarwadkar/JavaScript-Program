@@ -1,3 +1,15 @@
+/*
+| **Type**                 | **Hoisted?**                       | **Value before initialization** |
+| ------------------------ | ---------------------------------  | ------------------------------- |
+| `var`                    | ✅ Yes                             | `undefined`                    |
+| `let`                    | ✅ Yes (but in temporal dead zone) | ❌ ReferenceError              |
+| `const`                  | ✅ Yes (but in temporal dead zone) | ❌ ReferenceError              |
+| `function` (declaration) | ✅ Yes                             | Works normally                  |
+| `function` (expression)  | ⚠️ Partially                       | ❌ TypeError                    |
+
+*/
+
+
 /* ----- 1. Variable Hoisting ----- */
 
 // When we use var
@@ -28,3 +40,4 @@ sayHi(); // TypeError
 var sayHi = function() {
   console.log("Hi!");
 };
+
