@@ -23,7 +23,9 @@ a = 10;
 
 // When we use let and const
 console.log(b); // It is Showing -->  ReferenceError
+console.log(c); // It is Showing -->  ReferenceError
 let b = 20;
+const c = 30;
 
 /* ----- 2. Function Hoisting ----- */
 
