@@ -3,6 +3,8 @@ let str1 = "JavaScript is a Part of WebTech          ";
 
 console.log(str1);
 console.log(str+"_Java");  //[ IT WILL CONCAT TWO STRINGS ]
+//            JavaScript is a Part of WebTech_Java [ Display With Starting Space ]
+
 console.log(str.trimStart() + "_Java");  // [ IT WILL REMOVE STARTING OF THE SPACE ]
 console.log(str1.trimEnd() + "_Java");  // [ IT WILL REMOVE ENDING OF THE SPACE THEN MERGE]
 console.log(str.trim()+"_Java");  // [ REMOVE SPACE FROM BOTH SIDE ]
