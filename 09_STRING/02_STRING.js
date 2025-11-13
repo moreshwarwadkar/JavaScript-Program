@@ -42,6 +42,6 @@ console.log(s1.padEnd(11,s2));  // JavaScriptS
 /*
 padStart() adds characters to the beginning (left side) of a string until it reaches the given length.
 
-padEnd() adds characters to the end (right side) of the string.
+padEnd() adds characters to the end (right side) of the string until it reaches the given length.
 
 */
