@@ -29,10 +29,15 @@ console.log(str.repeat(5)); // JavaScriptJavaScriptJavaScriptJavaScriptJavaScrip
 let rating = 3;
 console.log("❤️".repeat(rating),"🖤".repeat(5-rating));
 
-let s1 = "java"
+let s1 = "Java"
 let s2 = "Script"
-console.log(s1.padStart(13,s2));  // SctJavaScript  
-console.log(s2.padEnd(13,s1));  // javJavaScript
+console.log(s1.padStart(10,s2));  // ScriptJava
+
+console.log(s1.padStart(11,s2));  // ScriptSJava
+
+console.log(s1.padEnd(10,s2));  //  JavaScript
+
+console.log(s1.padEnd(11,s2));  // JavaScriptS
 
 /*
 padStart() adds characters to the beginning (left side) of a string until it reaches the given length.
