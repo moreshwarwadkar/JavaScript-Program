@@ -33,3 +33,10 @@ let s1 = "java"
 let s2 = "Script"
 console.log(s1.padStart(13,s2));  // SctJavaScript  
 console.log(s2.padEnd(13,s1));  // javJavaScript
+
+/*
+padStart() adds characters to the beginning (left side) of a string until it reaches the given length.
+
+padEnd() adds characters to the end (right side) of the string.
+
+*/
