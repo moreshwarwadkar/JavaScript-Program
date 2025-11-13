@@ -21,11 +21,15 @@ console.log(st1.indexOf("a",2)); // DISPLAY INDEX VALUE --> 3
 console.log(st1.lastIndexOf("a",2)); //
 
 console.log(st1.split(""));  // [ 'JavaScript' ]
-console.log(st1.split(" "));  // [
+console.log(st1.split(" "));  
+// [
   'J', 'a', 'v', 'a',
   'S', 'c', 'r', 'i',
   'p', 't'
 ]
+
+console.log(st1.split("a")); 
+// [ 'J', 'v', 'Script' ]
 
 console.log(st1.slice(3,8));
 console.log(st1.substring(3,7));
