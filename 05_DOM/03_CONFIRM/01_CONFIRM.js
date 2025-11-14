@@ -1,1 +1,0 @@
-confirm('Are You Sure');
