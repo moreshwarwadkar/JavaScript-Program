@@ -1,0 +1,332 @@
+1) What are semantic tags in HTML? Write any five examples.
+2) What is the difference between <div> and <section>?
+3) Explain the purpose of the <meta> tag.
+4) What is difference between inline, block and inline-block elements?
+5) What is the use of the alt attribute in the <img> tag?
+6) What is the difference between id and class attribute?
+7) Explain the structure of a basic HTML documents?
+8) What is the purpose of the <form> tag? List it's commonly used attributes.
+9) What are the self-closing tags? Write any three examples.
+10) What is the difference between <ol> and <ul> list?
+11) What is the difference between padding and margin?
+12) What is the CSS Box Model? Draw and label it.
+13) Write the difference between Flexbox and Grid Layout.
+14) What are Pseudo-Classes? Give two examples.
+15) What is Specificity in CSS?
+16) How do External, Internal and Inline CSS Differ?
+17) What is the purpose of media queries?
+18) What is the use of Position Property? Explain any three types.
+19) What is the difference between display:none and visibility:hidden?
+20) Explain Z-Index with an example.
+21) What is the difference var,let,const?
+22) What is an array? Write any two array method.
+23) What is the DOM? Why is it Important?
+24) What is the difference == and ===.
+25) Explain Event Bubbling with an example.
+26) What are function in JavaScript? Write the syntax of a function.
+27) What is Hoisting?
+28) What is the difference between synchronous and asynchronous JavaScript?
+29) Explain map() and filter() method.
+30) What is an object in JavaScript? Write an example structure.
+
+==========================================================
+
+✅ HTML
+1) What are semantic tags in HTML? Write any five examples.
+
+Semantic tags clearly tell the meaning of the content.
+
+Examples:
+<header>, <nav>, <section>, <article>, <footer>
+
+👉 They help SEO, accessibility, and code readability.
+----------------------------------------------------------
+
+
+2) Difference between <div> and <section>?
+<div>	<section>
+Non-semantic (no meaning)	Semantic (has meaning)
+Used for styling/layout	Used to group related content
+Example: wrapper	Example: chapter, topic
+----------------------------------------------------------
+
+
+3) Purpose of <meta> tag
+
+Used to give information about the webpage.
+
+Examples:
+• character set
+• description
+• keywords
+• responsive design
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+----------------------------------------------------------
+
+
+4) Difference between inline, block, inline-block
+Type	New line	Width/Height
+Block	Yes	Yes
+Inline	No	No
+Inline-block	No	Yes
+
+Examples:
+Block → div, p, h1
+Inline → span, a, b
+Inline-block → button, img
+----------------------------------------------------------
+
+
+5) Use of alt attribute in <img>
+
+• Shows text if image fails to load
+• Helps screen readers
+• Important for SEO
+
+<img src="cat.jpg" alt="Cute cat">
+----------------------------------------------------------
+
+
+6) Difference between id and class
+id	class
+Unique	Can repeat
+One element	Many elements
+#symbol	.symbol
+----------------------------------------------------------
+
+
+7) Structure of basic HTML document
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page</title>
+</head>
+<body>
+  <h1>Hello</h1>
+</body>
+</html>
+----------------------------------------------------------
+
+
+8) Purpose of <form> tag + common attributes
+
+Used to collect user data.
+
+Common attributes:
+action, method, name, id, target
+----------------------------------------------------------
+
+
+9) Self-closing tags (any three)
+
+<br> , <hr> , <img> , <input> , <meta>
+----------------------------------------------------------
+
+
+
+10) Difference between <ol> and <ul>
+
+<ol> → Ordered list (1,2,3)
+<ul> → Unordered list (•, •, •)
+
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+
+✅ CSS
+
+11) Difference between padding and margin
+
+Padding → space inside the border
+Margin → space outside the border
+----------------------------------------------------------
+
+
+12) What is CSS Box Model?
+
+It has 4 parts:
+
+Margin
+ Border
+  Padding
+   Content
+
+
+👉 It controls spacing and layout.
+----------------------------------------------------------
+
+
+13) Flexbox vs Grid
+Flexbox	Grid
+One direction	Two direction
+Row OR column	Row AND column
+Small layout	Big layout
+----------------------------------------------------------
+
+
+14) What are Pseudo-classes?
+
+They style elements in special states.
+
+Examples:
+:hover , :focus , :active
+----------------------------------------------------------
+
+
+15) What is Specificity in CSS?
+
+It decides which CSS rule will apply.
+
+Priority:
+Inline > ID > Class > Tag
+----------------------------------------------------------
+
+
+16) External, Internal, Inline CSS
+Type	Where
+Inline	inside tag
+Internal	inside <style>
+External	separate .css file
+----------------------------------------------------------
+
+
+17) Purpose of media queries
+
+Used to make websites responsive.
+
+@media (max-width:600px) {
+  body { background: red; }
+}
+----------------------------------------------------------
+
+
+18) Use of position property (any three)
+
+• static – default
+• relative – moves from own place
+• absolute – moves inside parent
+• fixed – fixed on screen
+----------------------------------------------------------
+
+
+19) display:none vs visibility:hidden
+
+display:none → removes element
+visibility:hidden → hides but space remains
+----------------------------------------------------------
+
+
+20) Z-index
+
+Controls which element comes on top.
+
+div { position: absolute; z-index: 2; }
+
+
+Higher value → comes front.
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+
+✅ JavaScript
+
+21) var vs let vs const
+var	let	const
+Old	New	New
+Re-declare	No	No
+Reassign	Yes	No
+Function scope	Block scope	Block scope
+----------------------------------------------------------
+
+
+22) What is array? Two methods
+
+Array = store multiple values.
+
+let a = [10,20,30];
+
+
+Methods:
+push(), pop(), map(), filter()
+----------------------------------------------------------
+
+
+23) What is DOM? Why important?
+
+DOM = browser-created tree structure of HTML.
+
+Important because JS can:
+• change content
+• change style
+• handle events
+----------------------------------------------------------
+
+
+24) == vs ===
+
+== checks value
+=== checks value + datatype
+
+5 == "5"   // true  
+5 === "5"  // false
+----------------------------------------------------------
+
+
+25) Event Bubbling
+
+Event moves from child to parent.
+
+Example: click button → div → body.
+----------------------------------------------------------
+
+
+26) What is function? Syntax
+
+Function = block of code that does work.
+
+function greet() {
+  console.log("Hello");
+}
+----------------------------------------------------------
+
+
+27) Hoisting
+
+JavaScript moves declarations to top before execution.
+
+console.log(a); // undefined
+var a = 10;
+----------------------------------------------------------
+
+
+28) Synchronous vs Asynchronous
+
+Synchronous → step by step
+Asynchronous → background work
+
+Example:
+setTimeout(), fetch(), promises
+----------------------------------------------------------
+
+
+29) map() and filter()
+
+map() → changes all values
+filter() → selects some values
+
+arr.map(x => x*2)
+arr.filter(x => x>10)
+----------------------------------------------------------
+
+
+30) What is object? Example
+
+Object stores data in key-value pairs.
+
+let person = {
+  name: "Unik",
+  age: 22,
+  city: "Pune"
+};
