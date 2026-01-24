@@ -1,0 +1,357 @@
+1) Difference between var, let, const
+
+var
+
+- Old way to declare variables
+- Function-scoped
+- Can be re-declared and re-assigned
+- Gets hoisted with undefined
+
+let
+
+- Block-scoped
+- Cannot be re-declared
+- Can be re-assigned
+
+const
+
+- Block-scoped
+- Cannot be re-declared or re-assigned
+- Must be initialized at declaration
+- Used for fixed values and objects (reference fixed)
+-----------------------------------------------------
+
+
+2) What is Hoisting?
+
+- Hoisting is JavaScript’s behavior of moving variable and function declarations to the top of their scope before execution.
+- var is hoisted and initialized as undefined
+- let and const are hoisted but not initialized (Temporal Dead Zone)
+- Function declarations are fully hoisted
+-----------------------------------------------------
+
+
+3) Difference between null and undefined
+
+undefined → variable declared but not assigned a value
+null → intentionally empty value (set by developer)
+
+👉 undefined = system gives
+👉 null = developer gives
+-----------------------------------------------------
+
+
+4) Difference between data types in JavaScript
+
+JavaScript has two main types:
+
+Primitive:
+String, Number, Boolean, Null, Undefined, BigInt, Symbol
+→ store single values, immutable
+
+Non-Primitive (Reference):
+Object, Array, Function
+→ store collections, mutable
+-----------------------------------------------------
+
+
+5) Synchronous vs Asynchronous code
+
+Synchronous:
+Runs line by line, blocks next code.
+
+Asynchronous:
+Long tasks run in background, main code continues.
+Example: setTimeout(), fetch(), promises
+-----------------------------------------------------
+
+
+6) Function declaration vs Function expression
+
+Declaration
+
+- function hello(){}
+- Hoisted
+- Can be called before defined
+
+Expression
+
+- const hello = function(){}
+- Not hoisted
+- Stored in variable
+-----------------------------------------------------
+
+
+7) What is Higher-Order Function?
+
+A function that:
+- takes another function as argument
+OR
+- returns a function
+
+Examples: map(), filter(), setTimeout()
+-----------------------------------------------------
+
+
+8) What is Callback Function?
+
+A function passed into another function and executed later.
+
+setTimeout(function(){
+ console.log("Hello");
+}, 1000);
+-----------------------------------------------------
+
+
+9) Arrow function and difference from regular function
+
+Arrow function:
+
+const add = (a,b) => a+b;
+
+
+Differences:
+
+- Shorter syntax
+- No own this
+- Cannot be used as constructor
+- No arguments object
+-----------------------------------------------------
+
+
+10) Lexical Scoping
+
+A function can access variables defined outside it, based on where it is written, not where it is called.
+
+Inner functions remember outer variables.
+
+11) How to create an object
+let user = {
+ name: "Unik",
+ age: 22
+};
+
+
+Other ways:
+new Object()
+Object.create()
+-----------------------------------------------------
+
+
+12) How to clone object or array
+
+Array:
+let newArr = [...oldArr];
+
+
+Object:
+let newObj = {...oldObj};
+
+
+👉 This makes a shallow copy.
+-----------------------------------------------------
+
+
+13) Spread operator
+
+... expands values.
+
+Array:
+let newArr = [...a, ...b];
+
+
+Object:
+let newObj = {...obj};
+
+
+Used to copy, merge, pass values.
+-----------------------------------------------------
+
+
+14) Destructuring
+
+Used to extract values from arrays/objects.
+
+let {name, age} = user;
+let [a,b] = arr;
+-----------------------------------------------------
+
+
+15) map(), filter(), reduce()
+
+map() → transforms each element
+filter() → selects elements
+reduce() → combines all into one value
+
+Used for clean functional coding.
+-----------------------------------------------------
+
+
+16) Promises
+
+A Promise represents a future result.
+
+States:
+
+- pending
+- fulfilled
+- rejected
+
+fetch(url)
+.then(res => res.json())
+.catch(err => console.log(err))
+-----------------------------------------------------
+
+
+17) async and await
+
+- Used to write asynchronous code in synchronous style.
+- async makes a function return a promise
+- await waits for promise result
+- Makes code readable and easy to debug.
+-----------------------------------------------------
+
+
+18) setTimeout vs setInterval
+
+setTimeout() → runs once after delay
+setInterval() → runs repeatedly after fixed time
+-----------------------------------------------------
+
+
+19) Promise.all vs Promise.race
+
+Promise.all() → waits for all promises
+Promise.race() → returns first completed promise
+-----------------------------------------------------
+
+
+20) then-catch blocks
+
+Used to handle promise results.
+
+.then() → success
+.catch() → error
+-----------------------------------------------------
+
+
+21) Template literals
+
+- Use backticks `
+- Allow variables
+- Support multiline
+- Support expressions
+- `Hello ${name}`
+-----------------------------------------------------
+
+
+22) New features in ES6
+
+- let, const
+- arrow functions
+- template literals
+- destructuring
+- spread/rest
+- promises
+- classes
+- modules
+-----------------------------------------------------
+
+
+23) Default parameters
+
+Allow default values in functions.
+
+function add(a=0,b=0){}
+-----------------------------------------------------
+
+
+24) Modules
+
+Used to split code into files.
+
+Export:
+export function add(){}
+
+
+Import:
+import {add} from './file.js';
+
+Improves structure and reusability.
+-----------------------------------------------------
+
+
+25) DOM
+
+DOM is a tree structure of HTML elements created by browser.
+JavaScript uses it to change content, style, structure, and events.
+-----------------------------------------------------
+
+
+26) innerHTML vs innerText vs textContent
+
+innerHTML → gets/sets HTML
+innerText → visible text only
+textContent → all text (faster)
+-----------------------------------------------------
+
+
+27) Handling events
+
+- Using event listeners:
+
+btn.addEventListener("click", function(){});
+
+
+- Events: click, submit, keyup, mouseover.
+-----------------------------------------------------
+
+
+28) setTimeout and how it works
+
+- Runs function after a delay.
+
+setTimeout(() => {
+ console.log("Hi");
+}, 2000);
+
+
+Works asynchronously via event loop.
+-----------------------------------------------------
+
+
+29) == vs ===
+
+== → value only
+=== → value + type
+-----------------------------------------------------
+
+
+30) new keyword
+
+- Creates a new object from constructor function.
+
+function User(name){
+ this.name = name;
+}
+
+let u1 = new User("Unik");
+-----------------------------------------------------
+
+
+31) Object.freeze()
+
+- Stops changes in object.
+- Cannot add
+- Cannot delete
+- Cannot update
+-----------------------------------------------------
+
+
+32) JSON
+
+- JSON = JavaScript Object Notation
+- Used for data exchange.
+
+- JSON.stringify(obj)
+- JSON.parse(jsonData)
